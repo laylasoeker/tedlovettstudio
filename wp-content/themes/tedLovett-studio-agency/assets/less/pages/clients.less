@@ -1,0 +1,137 @@
+/* Clients */
+
+	.client {
+		padding-top: 5.5rem;
+	}
+		// .clientContainer.current .client {
+		// 	padding-top: 6.5625rem;
+		// }
+		.clientProjectContainer {
+			margin: 0 0 5.0625rem;
+		}
+			.clientProjectContainer:first-of-type {
+				margin: 0 0 1.6875rem;
+			}
+			.name {
+				margin: 1.4375rem 0;
+				.allCaps;
+				font-weight: 100;
+			}
+				.clientName {
+					margin: 0 -10px;
+					padding: 0.4375rem 10px 1.4375rem;
+					box-shadow: 0 -1px 0 0 @black;
+					transition: top .3s ease;
+				}
+					.clientContainer.current .clientName {
+						position: fixed;
+						top: 2.8125rem;
+						right: 0;
+						left: 0;
+						z-index: 1;
+						margin: 0;
+						padding: 0.4375rem 10px;
+						background: @white;
+					}
+				.clientProject, .clientRole {
+					margin: 0;
+				}
+				.clientRole {
+					margin: 0 0 1.4375rem;
+					color: @grey-dark;
+				}
+			.clientProjectDescription {
+				margin: 0 0 1.6875rem;
+				.bodySize;
+			}
+				.clientProjectDescription p {
+					margin: 0;
+				}
+			.clientProjectBody {
+				.bodySize;
+			}
+				.clientProjectBody p {
+					margin: 0;
+				}
+				.clientProjectBody a, .clientProjectBody .vvqbox {
+					display: block;
+					margin: 0 -10px 1.6875rem;
+				}
+					.clientProjectBody a {
+						background: #D2D2D2;
+					}
+					.clientProjectBody a:last-of-type, .clientProjectBody .vvqbox a:last-of-type {
+						margin: 0 -10px;
+					}
+				.clientProjectBody img {
+					transition: all .6s ease;
+				}
+					.clientProjectBody img.tla-lazy-loading {
+						opacity: 0;
+					}
+
+
+	@media only screen and (min-width: 560px) {
+
+		.clientProjectBody a, .clientProjectBody .vvqbox {
+			margin: 0 0 1.6875rem;
+		}
+			.clientProjectBody a:last-of-type, .clientProjectBody .vvqbox:last-of-type {
+				margin: 0;
+			}
+	}
+
+	@media only screen and (min-width: 820px) {
+
+		.client {
+			padding-top: 0;
+		}
+			.clientName { /*! temporary removal .clientProject */
+				.visuallyHidden;
+			}
+			.clientProjectContainer {
+				margin-bottom: 3.8125rem;
+				padding-top: 1.25rem;
+			}
+				.clientProjectcontainer:last-of-type {
+					margin-bottom: 7.625rem;
+				}
+				.clientRole {
+					// .biggerCaps;
+				}
+				.clientProjectDescription {
+					max-width: 650px;
+				}
+				// .clientProjectBody img {
+				// 	width: auto;
+				// 	height: 362px;
+				// }
+	}
+
+	// @media only screen and (min-width: 960px) {
+
+	// 	.clientProjectBody img {
+	// 		height: 450px;
+	// 	}
+	// }
+
+	// @media only screen and (min-width: 1024px) {
+
+	// 	.clientProjectBody img {
+	// 		height: 490px;
+	// 	}
+	// }
+
+	// @media only screen and (min-width: 1202px) {
+
+	// 	.clientProjectBody img {
+	// 		height: 560px;
+	// 	}
+	// }
+
+	// @media only screen and (min-width: 1340px) {
+
+	// 	.clientProjectBody img {
+	// 		height: 650px;
+	// 	}
+	// }

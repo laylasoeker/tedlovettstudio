@@ -1,0 +1,43 @@
+/* About */
+
+	.about main {
+
+		h2, h3 {
+			margin: .5rem 0 0;
+			.allCaps;
+			font-weight: 100;
+		}
+			h3 {
+				margin: 0 0 1.4375rem;
+			}
+		p {
+			margin: 0;
+			.bodySize;
+			text-indent: 20px;
+		}
+			p:first-of-type {
+				text-indent: 0;
+			}
+			p:last-of-type {
+				margin: 1.4375rem 0 0 0;
+				text-indent: 0;
+			}
+			.vcard p {
+				margin: 0;
+			}
+	}
+
+	@media only screen and (min-width: 820px) {
+
+		.about main {
+			max-width: 560px;
+			padding-top: 1.25rem;
+
+			h2 {
+				margin: 0;
+			}
+			h2, h3 {
+				// .biggerCaps;
+			}
+		}
+	}

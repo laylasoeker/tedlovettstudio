@@ -1,0 +1,39 @@
+/* Lightbox */
+
+	#lightbox {
+		opacity: 0;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+		overflow: scroll;
+		-webkit-overflow-scrolling: touch;
+		background: rgba(0,0,0,.85);
+		transition: opacity .3s ease, z-index .0s .3s;
+	}
+		.__lightbox-active #lightbox {
+			opacity: 1;
+			z-index: 3;
+			transition: opacity .3s ease;
+		}
+		#lightbox-close {
+			display: none; /*! temporary */
+		}
+		#lightbox img {
+			position: relative;
+			transition: all .6s .3s ease;
+			cursor: pointer;
+		}
+			#lightbox img.__loading {
+				// opacity: 0;
+				position: fixed;
+			}
+
+	@media only screen and (max-width: 760px) {
+
+		#lightbox img {
+			max-width: 1050px !important;
+		}
+	}

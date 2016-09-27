@@ -1,0 +1,20 @@
+# OSX
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+
+# Codekit
+
+.codekit-cache
+
+
+# Sublime
+
+tedLovett-agency.sublime-project
+tedLovett-agency.sublime-workspace

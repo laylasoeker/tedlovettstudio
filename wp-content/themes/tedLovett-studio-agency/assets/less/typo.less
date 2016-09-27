@@ -1,0 +1,44 @@
+/* Typography */
+
+	@font-face {
+	    font-family: 'Calibre';
+	    src: url('/assets/fonts/CalibreWeb-Regular.eot');
+	    src: url('/assets/fonts/CalibreWeb-Regular.eot?#iefix') format('embedded-opentype'),
+	         url('/assets/fonts/CalibreWeb-Regular.woff') format('woff');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+
+	/* Colors */
+
+		@black:     #000;
+		@grey-dark: #999;
+		@grey:      #999; // e6e6e6
+		@white:     #fff;
+
+	/* Mixins */
+
+		.allCaps {
+			text-transform: uppercase;
+			font-size: 2em;
+			line-height: 1.875rem;
+		}
+			.biggerCaps {
+				font-size: 2.375em;
+			}
+		.bodySize {
+			font-size: 1.125em;
+			line-height: 1.25rem;
+		}
+
+	/* Elements */
+
+		body {
+			font-family: 'Calibre', sans-serif;
+			text-rendering: optimizeLegibility;
+		}
+
+		header.banner nav {
+			.allCaps;
+			color: @grey;
+		}
